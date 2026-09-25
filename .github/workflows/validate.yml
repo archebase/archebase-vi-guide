@@ -1,0 +1,36 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate skill bundle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Logo bundle integrity
+        run: python3 scripts/validate_logo_bundle.py
+
+      - name: Semantic tokens against the approved Guide set
+        run: python3 scripts/validate_tokens.py
+
+      - name: Asset manifest and reference integrity
+        run: python3 scripts/validate_asset_reference.py
+
+      - name: Release report contract
+        run: python3 scripts/check_release_report.py
+
+      - name: Markdown and reference index links
+        run: python3 scripts/check_doc_links.py

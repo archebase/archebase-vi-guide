@@ -1,0 +1,39 @@
+Copyright (c) 2026 ArcheBase. All rights reserved.
+
+This repository contains two different kinds of material, under different terms.
+
+1. Skill instructions
+
+   `SKILL.md`, everything under `references/`, `templates/`, `checklists/`,
+   `tokens/` and `scripts/`, and the explanatory text in `README.md`.
+
+   ArcheBase grants its teams, and agents acting on ArcheBase's behalf, permission
+   to read, copy, adapt and use this material for ArcheBase work.
+
+   Anyone else may read it, but may not use it to produce material that is
+   presented as ArcheBase-branded, and may not present it as their own brand
+   system. No other rights are granted.
+
+2. Brand assets
+
+   Everything under `assets/logos/`, plus the ArcheBase name, wordmarks and
+   graphic marks.
+
+   These are proprietary brand assets of ArcheBase. All rights reserved.
+
+   Their presence in a public repository does not grant a licence to
+   redistribute, sublicense, republish or modify them, or to use them for any
+   product, service or communication that is not ArcheBase-branded. Do not
+   redraw, trace, recolor, skew, stretch, add effects to, or regenerate the marks.
+
+   ArcheBase's marketing lead authorized the public release of this repository,
+   including the bundled logo files, on 2026-09-25. That authorization covers
+   ArcheBase publishing these assets here; it does not extend those rights to
+   third parties.
+
+See `NOTICE.md` for the full notice, and `references/asset-governance.md` for how
+asset changes and approvals are handled.
+
+THE MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL ARCHBASE BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THIS MATERIAL.

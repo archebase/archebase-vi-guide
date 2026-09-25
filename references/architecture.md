@@ -87,5 +87,3 @@ Do not load all references for a simple request. Do not skip the references for 
 ## Change management
 
 A change to Layer 1 affects routing and may be breaking. A change to Layer 2 affects design decisions and must cite Guide pages. A change to Layer 3 affects execution and must add a regression test. Increment the system version when any layer changes, preserve the prior manifest, and verify every bound agent still has both `pptx` and `archebase-vi-guide`.
-EOF
-mkdir -p ./vi-system/{references,tokens,templates,checklists,scripts,assets}

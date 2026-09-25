@@ -57,9 +57,19 @@ magick compare -metric RMSE /tmp/render.png assets/logos/png/<name>.png null:   
 ## Validators
 
 ```sh
-python3 scripts/validate_logo_bundle.py   # SVG/PNG pair integrity
-python3 scripts/validate_tokens.py        # token file shape
-python3 scripts/check_release_report.py   # release report completeness
+python3 scripts/validate_logo_bundle.py    # SVG/PNG pair and bundle integrity
+python3 scripts/validate_tokens.py         # tokens against the approved Guide color set
+python3 scripts/validate_asset_reference.py # manifest vs bundle; dangling/legacy references
+python3 scripts/check_release_report.py    # release report completeness
+python3 scripts/check_doc_links.py         # markdown and reference-index link integrity
+```
+
+All are deterministic, read-only, and exit non-zero on failure. They run in CI on every push and pull request via [`.github/workflows/validate.yml`](.github/workflows/validate.yml).
+
+To additionally re-render every SVG and compare it against the bundled PNG bit-for-bit (requires `librsvg` and ImageMagick):
+
+```sh
+scripts/render_logo.sh --verify-all
 ```
 
 ## Source hierarchy
@@ -73,6 +83,6 @@ On conflict, stop and record the conflict. Never average conflicting brand value
 
 ## License and brand assets
 
-The skill instructions are published so ArcheBase teams and their agents can apply the brand system consistently. The logo files and the VI Guide are **proprietary brand assets of ArcheBase** and are not licensed for redistribution or reuse outside ArcheBase-branded work. See [`NOTICE.md`](NOTICE.md).
+The skill instructions are published so ArcheBase teams and their agents can apply the brand system consistently. The logo files and the VI Guide are **proprietary brand assets of ArcheBase** and are not licensed for redistribution or reuse outside ArcheBase-branded work. See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
 
 Do not redraw, trace, recolor, skew, stretch, add effects to, or regenerate the official marks.

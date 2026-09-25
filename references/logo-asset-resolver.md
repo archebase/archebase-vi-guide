@@ -11,7 +11,7 @@ Current delivery: `智域基石 Logo V2` (synced 2026-09-22). See `assets/logo-m
 | `assets/logos/png/` | Raster delivery for web, social, office and deck export |
 | `assets/logos/png-hires/` | App icon, avatar, favicon and large-format icon use |
 
-Each SVG has a matching PNG at the same native size in `assets/logos/png/`. All 24 pairs verified at RMSE 0 on 2026-09-22.
+Each SVG has a matching PNG at the same native size in `assets/logos/png/`. All 25 pairs verified at RMSE 0 on 2026-09-22.
 
 ## Resolution procedure
 

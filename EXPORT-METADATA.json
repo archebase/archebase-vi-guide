@@ -1,11 +1,12 @@
 {
   "id": "dc47982c-6a2b-4ed1-980b-679e91647ac2",
   "name": "archebase-vi-guide",
-  "description": "Use for any ArcheBase-branded design or review. This is a 3-layer VI system: SKILL.md orchestrates progressive disclosure; references contain route/page/domain rules; templates, manifests, tokens, checklists and validators make execution repeatable. Use with shared pptx for PowerPoint work.",
+  "description": "Use for any ArcheBase-branded design or review. This is a 3-layer VI system: SKILL.md orchestrates progressive disclosure; references contain route/page/domain rules; templates, manifests, tokens, checklists and validators make execution repeatable. Use with the shared pptx skill for PowerPoint work.",
   "created_at": "2026-09-05T16:59:35Z",
-  "updated_at": "2026-09-22T05:30:00Z",
-  "file_count": 86,
+  "updated_at": "2026-09-25T09:21:25Z",
+  "file_count": 93,
   "changelog": [
+    "2026-09-25: v3.1.0. Completed Layer 2 — added the four missing route playbooks (web-ui, social, video-event, image-generation) and asset-governance.md; corrected the logo count from 24 to 25 in logo-manifest.json, logo-asset-resolver.md and guide-source-manifest.md; documented the png-hires naming and coverage gaps in logo-manifest.json known_gaps; rewrote the generic checklists as route-specific gates; added scripts/validate_asset_reference.py and scripts/check_doc_links.py; strengthened validate_tokens.py to enforce the approved Guide color set; removed two stray shell lines from architecture.md",
     "2026-09-22: synced logo assets to 智域基石 Logo V2; bundled PNG raster delivery (assets/logos/png) and high-res icon exports (assets/logos/png-hires); added rendering rule because ImageMagick's internal SVG renderer mangles the gradient SVGs; added scripts/render_logo.sh; extended scripts/validate_logo_bundle.py"
   ]
 }
