@@ -36,6 +36,18 @@
         "The response checks crops, first-frame legibility, official logo selection and asset immutability.",
         "The response names blockers and gives a release verdict rather than treating the graphic as automatically publishable."
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Lay out an ArcheBase technical WeChat article in InkPost using the tracked CSS theme. Keep the VI style consistent and tell me what you would validate before copying it to WeChat.",
+      "expected_output": "The agent selects the inkpost-wechat route, uses the tracked preset as source, cites approved VI colors and typography evidence, runs CSS and WeChat safety checks, inspects the rendered article, and reports unresolved approvals plus a verdict.",
+      "files": [],
+      "expectations": [
+        "The response distinguishes the tracked InkPost preset from local user theme state.",
+        "The response uses the explicit VI color evidence without turning p.28 into component quotas.",
+        "The response requires deterministic CSS validation and rendered preview inspection before release.",
+        "The response reports claims, rights, naming, type and export blockers instead of guessing."
+      ]
     }
   ]
 }

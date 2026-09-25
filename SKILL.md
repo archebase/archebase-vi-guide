@@ -14,9 +14,9 @@ This skill is the orchestration layer for ArcheBase brand work. It is deliberate
 
 ## Trigger
 
-Use for any ArcheBase-branded PPTX/deck/BP/film, website/product UI, social or press material, video/event screen, image prompt/source, Logo/font/color/template operation, or brand review.
+Use for any ArcheBase-branded PPTX/deck/BP/film, website/product UI, social or press material, video/event screen, image prompt/source, Logo/font/color/template operation, brand review, or WeChat article laid out in InkPost.
 
-If `.pptx` or `.potx` is involved, load this skill **and** the shared `pptx` skill. The `pptx` skill owns PowerPoint construction, OOXML, native charts, rendering and technical validation. This skill owns ArcheBase visual direction, source evidence, asset choice and brand QA.
+If the task is an InkPost / WeChat article, select the `inkpost-wechat` route and load `references/inkpost-wechat-playbook.md` plus `checklists/inkpost-wechat.md`. The InkPost route owns article hierarchy, channel-safe CSS and export QA; InkPost itself owns Markdown rendering and clipboard export.
 
 ## Three-layer design
 
@@ -39,10 +39,10 @@ On conflict, stop and record the conflict. Never average conflicting brand value
 
 1. Load this file.
 2. Select the guidance mode from `references/modes.md`: `strict`, `guided`, `creative`, or `off`. Do not force strict VI compliance when the user wants platform-native or experimental creative work.
-3. Select route: `deck`, `web-ui`, `social`, `video-event`, `image`, or `review`.
+3. Select route: `deck`, `web-ui`, `inkpost-wechat`, `social`, `video-event`, `image`, or `review`.
 4. Load `references/guide-page-evidence.md` and `references/logo-asset-resolver.md` for all visual asset work. When using numeric color, neutral or typography evidence, also load `assets/guide-evidence.json` and cite its evidence id/page.
-5. Load the selected route playbook.
-6. Load the relevant template, checklist and token/manifest files.
+5. Load the selected route playbook. For `inkpost-wechat`, load `references/inkpost-wechat-playbook.md` and `checklists/inkpost-wechat.md`.
+6. Load the relevant template, checklist and token/manifest files. The InkPost route additionally uses `scripts/validate_inkpost_css.py` against the exact exported CSS.
 7. Build, render, inspect, validate and run the mode-appropriate release gates.
 8. Return only relevant evidence, decisions, QA, approvals and verdict.
 
