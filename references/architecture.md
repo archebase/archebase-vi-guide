@@ -48,13 +48,14 @@ Layer 3 should contain executable or fillable support files, not more prose:
 - `assets/guide-evidence.json`: compact, verified page-level evidence for numeric/color/font claims; preserves `do_not_infer` boundaries without embedding the large PDF.
 - `assets/logo-manifest.json`: generated from a read-only listing of the approved Drive folder; records current filename, extension, asset family, source directory, token/reference, modified time, and legacy status. Never stores credentials.
 - `tokens/archebase.tokens.json`: semantic colors, explicit p.28 ratio and p.30–32 neutral evidence, type families, logo policy, and remaining `待确认` implementation fields.
-- `templates/brief.md`: route/audience/dimensions/judgment/evidence/assets/risk.
+- `templates/brief.md`: mode/route/audience/dimensions/judgment/evidence/assets/risk.
 - `templates/page-inspection-record.md`: page, visible elements, extracted rule, evidence type, applies-to, do-not-infer, confidence, reviewer/date.
 - `templates/decision-record.md`: question, options, choice, rationale, source page, assumptions, reversible boundary, approver.
 - `templates/release-report.md`: four gates, findings, owner, impact, verdict.
 - `checklists/deck.md`, `checklists/web-ui.md`, `checklists/social.md`, `checklists/video-event.md`, `checklists/image.md`: compact route-specific execution gates.
 - `scripts/validate_tokens.py`: rejects colors outside the approved token set and checks the explicit Guide ratio/neutral evidence.
 - `scripts/validate_guide_evidence.py`: verifies the compact evidence register and, when a local PDF is supplied, its page count and SHA-256.
+- `scripts/validate_modes.py`: verifies the opt-in mode contract, hard boundaries, templates and mode-aware gates.
 - `scripts/validate_asset_reference.py`: rejects missing/non-current/logo recreation references and flags legacy assets.
 - `scripts/check_release_report.py`: ensures every deliverable has source pages, QA status, unresolved owner, and verdict.
 - `evals/evals.json`: representative route prompts and verifiable expectations for regression evaluation.

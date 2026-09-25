@@ -62,6 +62,7 @@ magick compare -metric RMSE /tmp/render.png assets/logos/png/<name>.png null:   
 python3 scripts/validate_logo_bundle.py     # SVG/PNG pair and bundle integrity
 python3 scripts/validate_asset_integrity.py # SHA-256 pins: brand assets unmodified
 python3 scripts/validate_guide_evidence.py  # page evidence register and optional PDF hash/page-count check
+python3 scripts/validate_modes.py           # opt-in modes and creative latitude contract
 python3 scripts/validate_tokens.py          # tokens against the approved Guide color set
 python3 scripts/validate_asset_reference.py # manifest vs bundle; dangling/legacy references
 python3 scripts/check_release_report.py     # release report completeness

@@ -1,5 +1,6 @@
 # Web / UI checklist
 
+- [ ] Mode selected in the brief; strict is opt-in, while guided/creative may preserve product and channel conventions
 - [ ] `templates/brief.md` filled with viewport sizes and a screen inventory
 - [ ] One primary judgment per screen; conclusion stated before metadata
 - [ ] Every color mapped to a semantic token; no color outside the token file

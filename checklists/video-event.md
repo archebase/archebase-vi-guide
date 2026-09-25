@@ -1,5 +1,6 @@
 # Video / event-screen checklist
 
+- [ ] Mode selected in the brief; formal identity screens use strict, campaigns/events may use creative
 - [ ] `templates/brief.md` filled with playback surface, native resolution and viewing distance
 - [ ] Scene inventory has one judgment per scene
 - [ ] Type and mark sized for worst-case viewing distance, not the best seat

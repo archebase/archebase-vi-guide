@@ -1,5 +1,6 @@
 # Deck checklist
 
+- [ ] Mode selected in the brief; use `strict` for formal external/company decks and `guided`/`creative` when the brief allows authorship or channel latitude
 - [ ] `templates/brief.md` filled; slide inventory has one judgment per slide
 - [ ] Relevant Guide pages inspected with a page-inspection record each
 - [ ] Each slide classified: system statement, evidence-led, transformation flow, comparison, or image-led

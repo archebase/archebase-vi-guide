@@ -30,8 +30,8 @@ Record one `templates/page-inspection-record.md` per page used. A visual inferen
 ## 3. Hierarchy and composition
 
 - State the conclusion before the metadata. A user should get the judgment from the first screenful.
-- Keep no more than three hierarchy levels.
-- Use one dominant field, one structural blue, and at most one meaningful highlight.
+- In `strict`, keep no more than three hierarchy levels. In `guided`/`creative`, channel-native hierarchy may depart when the brief records why.
+- Use one dominant field, one structural blue, and at most one meaningful highlight in `strict`; in `guided`/`creative`, departures are allowed when they support the channel or audience.
 - Let evidence dominate decoration. Data flow, connected nodes, labeled modules, system boundaries and real physical-world imagery are allowed only when they explain the claim.
 
 Remove random node graphs, circuit wallpaper, glow, rainbow palettes, 3D charts, decorative gradients, filler stripes and unrelated icon families.

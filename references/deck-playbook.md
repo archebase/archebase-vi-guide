@@ -9,4 +9,4 @@ Load with the shared `pptx` skill. Keep responsibilities separate: this playbook
 5. Select current SVG logo through the resolver; use PNG only when raster output requires it.
 6. Use native charts where PowerPoint supports them. Titles state conclusions; include units, time, sample and source.
 7. Run the shared `pptx` content QA, validator, rendered visual QA and thumbnail grid. Fix overflow, overlap, low contrast and repetitive layouts.
-8. Report technical file QA separately from brand QA. Unconfirmed logo geometry, type sizing, semantic color-role allocation, or naming blocks release.
+8. Report technical file QA separately from brand QA. In `strict`, unresolved Logo geometry, type sizing, semantic color-role allocation or naming can block release; in `guided`/`creative`, soft visual departures become findings with owner/impact while hard boundaries still block.

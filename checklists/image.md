@@ -1,5 +1,6 @@
 # Image checklist
 
+- [ ] Mode selected in the brief; strict is opt-in and creative mode is appropriate for campaign/editorial imagery
 - [ ] `templates/brief.md` filled with the claim the image carries and its placement
 - [ ] Checked whether real physical-world evidence or an existing approved image already covers it
 - [ ] No prompt requested the ArcheBase mark or any approximation of it

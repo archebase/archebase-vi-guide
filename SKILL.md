@@ -3,7 +3,7 @@ name: archebase-vi-guide
 description: "Use whenever a request involves ArcheBase / 智域基石 brand work: VI review, logo selection, brand colors or typography, PPTX/decks/BPs, web/product UI, social or press graphics, video/event screens, image sourcing or generation, or brand templates. Routes the work through the official VI Guide evidence, approved V2 assets, channel playbooks, deterministic validators and human release gates. For PPTX/POTX, use together with the shared pptx skill."
 license: Proprietary. Do not redistribute brand assets.
 metadata:
-  version: "3.3.1"
+  version: "3.4.0"
   source: "ArcheBase VI Guide System"
 compatibility: "Requires a filesystem-capable skill loader. Python 3 runs validators; librsvg and ImageMagick are optional for logo render verification; PyMuPDF is optional for --pdf evidence verification."
 ---
@@ -38,12 +38,13 @@ On conflict, stop and record the conflict. Never average conflicting brand value
 ## Progressive disclosure
 
 1. Load this file.
-2. Select route: `deck`, `web-ui`, `social`, `video-event`, `image`, or `review`.
-3. Load `references/guide-page-evidence.md` and `references/logo-asset-resolver.md` for all visual asset work. When using numeric color, neutral or typography evidence, also load `assets/guide-evidence.json` and cite its evidence id/page.
-4. Load the selected route playbook.
-5. Load the relevant template, checklist and token/manifest files.
-6. Build, render, inspect, validate and run release gates.
-7. Return only relevant evidence, decisions, QA, approvals and verdict.
+2. Select the guidance mode from `references/modes.md`: `strict`, `guided`, `creative`, or `off`. Do not force strict VI compliance when the user wants platform-native or experimental creative work.
+3. Select route: `deck`, `web-ui`, `social`, `video-event`, `image`, or `review`.
+4. Load `references/guide-page-evidence.md` and `references/logo-asset-resolver.md` for all visual asset work. When using numeric color, neutral or typography evidence, also load `assets/guide-evidence.json` and cite its evidence id/page.
+5. Load the selected route playbook.
+6. Load the relevant template, checklist and token/manifest files.
+7. Build, render, inspect, validate and run the mode-appropriate release gates.
+8. Return only relevant evidence, decisions, QA, approvals and verdict.
 
 ## Logo assets
 

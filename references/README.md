@@ -6,6 +6,7 @@ Load only the references needed for the current route.
 
 | Reference | When to load |
 |---|---|
+| `modes.md` | **Always, before applying route guidance**; choose strict/guided/creative/off and preserve channel latitude |
 | `guide-page-evidence.md` | Any task needing VI Guide page interpretation; pair with `assets/guide-evidence.json` for verified numeric/color/font evidence |
 | `logo-asset-resolver.md` | Any task placing or reviewing Logo/assets |
 | `visual-grammar.md` | Any visual design or review |
@@ -47,6 +48,7 @@ Load only the references needed for the current route.
 | `scripts/validate_logo_bundle.py` | SVG/PNG pair and bundle integrity |
 | `scripts/validate_asset_integrity.py` | Pinned-asset check: fails if any brand asset changed |
 | `scripts/validate_guide_evidence.py` | Evidence register and optional official PDF hash/page-count check |
+| `scripts/validate_modes.py` | Opt-in mode, hard-boundary and mode-aware gate contract |
 | `scripts/validate_tokens.py` | Token file against the approved Guide color set |
 | `scripts/validate_asset_reference.py` | Manifest vs bundle, dangling and legacy references |
 | `scripts/check_release_report.py` | Release report completeness |

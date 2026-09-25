@@ -37,7 +37,7 @@ The first frame is the whole argument. Most viewers never see anything else.
 ## 4. Copy
 
 - Put the conclusion before the metadata.
-- Keep no more than three hierarchy levels.
+- Keep no more than three hierarchy levels in `strict`; platform-native hierarchy is allowed in `guided`/`creative`.
 - Titles state conclusions; include units, time, sample and source for any material metric.
 - Do not let a headline assert something the evidence in the same asset does not support.
 

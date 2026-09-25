@@ -1,3 +1,4 @@
+Mode: strict | guided | creative | off
 Route:
 Artifact:
 Source pages/assets:
@@ -6,5 +7,7 @@ Design gate: pass | fail | 待确认
 Claims/Rights gate: pass | fail | 待确认
 Export/QA gate: pass | fail | 待确认
 Findings:
+Intentional creative departures / channel rationale:
+Hard-boundary issues / owner / impact:
 Unresolved item / owner / impact:
 Verdict: 可发布 | 修复后复审 | 阻塞，待确认

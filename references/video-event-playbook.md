@@ -33,7 +33,7 @@ Record one `templates/page-inspection-record.md` per page used.
 - Keep the mark and all critical text inside the venue safe area. Projection, LED processing and overscan can each crop differently; record the value used and its source.
 - Check contrast on the actual screen or a calibrated preview. A color that reads well on a monitor can disappear on a bright stage LED.
 - Do not place the mark on a moving or high-detail passage. Choose the variant through the resolver rather than adding an outline or shadow to force contrast.
-- State the conclusion before the metadata, and keep no more than three hierarchy levels per scene.
+- State the conclusion before the metadata in `strict`, and keep no more than three hierarchy levels per scene. In `guided`/`creative`, allow channel-native hierarchy when it improves the viewing experience and record the departure.
 
 ## 4. Motion
 

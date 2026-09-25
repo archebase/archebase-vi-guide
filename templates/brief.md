@@ -1,4 +1,6 @@
 # Design brief
+Mode: strict | guided | creative | off
+Mode rationale / explicit user choice:
 Route: deck | web-ui | social | video-event | image | review
 Audience:
 Channel / dimensions / viewing distance:
