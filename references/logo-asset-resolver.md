@@ -13,6 +13,20 @@ Current delivery: `智域基石 Logo V2` (synced 2026-09-22). See `assets/logo-m
 
 Each SVG has a matching PNG at the same native size in `assets/logos/png/`. All 25 pairs verified at RMSE 0 on 2026-09-22.
 
+## Current generation — required
+
+`智域基石 Logo V2` is the **correct and current** generation (brand-owner decision, 2026-09-25; recorded in `assets/logo-manifest.json` under `approved_generation`). Resolve only against the bundled assets, which are a byte-for-byte copy of that delivery.
+
+Never resolve to a superseded generation:
+
+| Superseded | What it is |
+|---|---|
+| V1 naming (`白色_*` / `蓝色_*`, no 纯色/渐变 split) | The previous generation; shipped as `智域基石 Logo`, `智域基石 Logo V1 2` |
+| The 2026-07-29 raw export (`正常logo 1–10/a–h`, `单色logo 1–5`) | Unreviewed export of the same marks; not the reviewed delivery |
+| Pre-V2 drafts (`20260321logo*`, `20260325logo-黑白彩色`, `成图logo-*`, `LOGO.ai`, `LOGO排版00.ai`) | Historical drafts |
+
+A filename from a superseded generation is **not** a missing variant to reconstruct. If a needed variant appears absent, mark it `待确认` and ask the brand owner — do not rebuild it from an older name or an older file.
+
 ## Resolution procedure
 
 1. Use the bundled `assets/logos/` directories first. Read-only list the Feishu folder only when the needed variant is missing or a newer export must be confirmed.

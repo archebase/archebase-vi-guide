@@ -93,9 +93,19 @@ The gradient SVGs use multiple stops with `stop-opacity`. **ImageMagick's intern
 
 An asset rasterized with a renderer that does not match the approved asset blocks release.
 
-## 7. Legacy assets
+## 7. Legacy assets and superseded generations
 
 Files marked `old_*` are legacy. They may not be used in new work and may only be used in an existing artifact when the brand owner approves the exception in writing, recorded in the decision record. Retirement of a legacy asset is a brand-owner decision.
+
+Whole generations can also be superseded, which matters more than any single file. The brand owner confirmed on 2026-09-25 that **`智域基石 Logo V2` is the correct version**; the manifest records this under `approved_generation`, including the superseded set. In short:
+
+- the V1 generation (naming with no 纯色/渐变 split — `白色_*` / `蓝色_*`),
+- the 2026-07-29 unreviewed raw export (`正常logo 1–10/a–h`, `单色logo 1–5`),
+- pre-V2 drafts (`20260321logo*`, `20260325logo-黑白彩色`, `成图logo-*`, `LOGO.ai`, `LOGO排版00.ai`).
+
+A superseded generation stays out of the bundle. Do not add it as `old_*` "for completeness": mixing generations is what makes a resolver ambiguous, because the older names look like plausible variants of the newer set. If an older file is genuinely needed for an existing artifact, keep it outside the bundle and record the exception.
+
+An absent variant is a `待确认` item for the brand owner, never a gap to improvise from an older generation.
 
 ## 8. Approvals and blocking conditions
 
