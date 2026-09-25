@@ -1,7 +1,9 @@
 {
   "source_folder": "https://archebase.feishu.cn/drive/folder/MBewfd14ll34N0dJINNcQnQqn4c",
   "source_delivery": "智域基石 Logo V2 (local delivery bundle, png/svg/jpg exports)",
+  "source_local_path": "~/Downloads/智域基石 Logo V2",
   "synced_at": "2026-09-22",
+  "resynced_checked_at": "2026-09-25",
   "local_bundle": {
     "svg": "assets/logos/svg/",
     "png": "assets/logos/png/",
@@ -19,11 +21,25 @@
     "png": 25,
     "png_hires": 9
   },
+  "source_layout": {
+    "comment": "The delivery's own folder layout differs from the bundled layout; this explains why earlier records said 24 PNG files.",
+    "delivery_svg_dir": "34 files = 25 SVG sources + the 9 high-resolution/512 transparent PNG exports",
+    "delivery_png_dir": "24 PNG files",
+    "delivery_jpg_dir": "23 JPG previews (not bundled)",
+    "bundling_rule": "SVG sources -> assets/logos/svg/; the delivery's png/ -> assets/logos/png/; the delivery's svg/*.png -> assets/logos/png-hires/.",
+    "one_extra_png": "assets/logos/png/蓝色纯色_无文字_方圆通用_图形标.png has no counterpart in the delivery's png/ folder. It is byte-identical to the delivery's svg/蓝色纯色_无文字_方圆通用_图形标.png (a 512px transparent export, the same file as the png-hires entry). It was copied into png/ so that every SVG has a same-size raster beside it, keeping the pair check green. The delivery's png/ really does hold 24, so both '24' and '25' were defensible for differently-scoped records; the bundled inventory is 25."
+  },
   "verified": {
     "svg_vs_png_pairs": 25,
     "method": "rsvg-convert render of each SVG compared against bundled PNG at native size",
     "result": "all pairs match at RMSE 0",
-    "date": "2026-09-22"
+    "date": "2026-09-22",
+    "reverified": {
+      "date": "2026-09-25",
+      "method": "SHA-256 byte-for-byte comparison of every bundled asset against the delivery folder, plus scripts/render_logo.sh --verify-all",
+      "result": "25/25 SVG identical, 24/24 delivery PNG identical, 9/9 png-hires identical; all 25 SVG re-renders match the bundled PNG bit-for-bit",
+      "note": "The bundle is current; no asset needed re-syncing."
+    }
   },
   "rendering": {
     "required": "rsvg-convert (librsvg) or another spec-complete SVG renderer",
@@ -42,6 +58,7 @@
     "background_encoding": "png-hires files marked 白底 are opaque sRGB (no alpha channel); the same form without 白底 is sRGBA with a transparent background. Never substitute one for the other."
   },
   "known_gaps": [
+    "All gaps below were confirmed on 2026-09-25 to exist in the official delivery folder itself, not introduced by the bundle sync. The bundle is a faithful copy; the shortfalls need the brand owner to re-export, not a local fix.",
     "png-hires coverage is asymmetric: 蓝色渐变 exists as 白底 and transparent at 2048/4096/8192, but 蓝色纯色 only has 白底_高清 (2048), 白底 (512) and transparent (512) — no 4096/8192 and no transparent export above 512. Delivery scope is 待确认 with the brand owner.",
     "png-hires only covers the 无文字_方圆通用_图形标 form. That matches its documented app-icon/avatar/favicon purpose, but whether other forms are intentionally out of scope is 待确认.",
     "方形 and 方圆通用 are distinct orientations and are not interchangeable (e.g. 蓝色纯色_无文字_方形_图形标 vs 蓝色纯色_无文字_方圆通用_图形标). The placement rule that chooses between them is 待确认.",

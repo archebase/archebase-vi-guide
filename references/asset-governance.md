@@ -62,6 +62,26 @@ A count mismatch between the manifest and the bundle is a record defect: fix the
 6. Run both validators and `scripts/render_logo.sh --verify-all`.
 7. Increment the skill version and add a changelog entry in `EXPORT-METADATA.json`.
 
+## 5a. Re-verifying the bundle against the delivery
+
+Before trusting the bundle, before a large brand deliverable, or whenever the source folder may have moved on, compare the two directly. This is read-only on the delivery.
+
+1. Locate the delivery folder. The manifest records it as `source_local_path` (currently `~/Downloads/智域基石 Logo V2`) and as the Feishu `source_folder` URL.
+2. Compare every bundled asset against its counterpart with SHA-256 — not size or timestamps.
+3. Run `scripts/render_logo.sh --verify-all` to confirm every SVG still renders to its bundled PNG bit-for-bit.
+4. Record the outcome in the manifest's `verified.reverified` block: date, method, result.
+
+Compare against the delivery's own layout, which differs from the bundled layout. See `source_layout` in the manifest:
+
+| Delivery | Bundled |
+|---|---|
+| `svg/*.svg` (25) | `assets/logos/svg/` |
+| `svg/*.png` (9) | `assets/logos/png-hires/` |
+| `png/*.png` (24) | `assets/logos/png/` — plus one extra, see below |
+| `jpg/*.jpg` (23) | not bundled; preview only |
+
+The delivery's `svg/` folder mixes SVG sources with PNG exports, and its `png/` folder holds 24 files while the bundle's `assets/logos/png/` holds 25. The extra file is `蓝色纯色_无文字_方圆通用_图形标.png`, copied from the delivery's `svg/` folder so that every SVG has a same-size raster beside it and the pair check stays green. Expect this asymmetry; do not "fix" it by deleting the file or by moving the delivery's files around.
+
 ## 6. Renderer rule
 
 The gradient SVGs use multiple stops with `stop-opacity`. **ImageMagick's internal SVG renderer renders them incorrectly** — output is darker and parts of the mark are flattened, which has previously made the mark look wrong or "missing" in composed layouts.

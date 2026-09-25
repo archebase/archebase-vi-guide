@@ -1,6 +1,6 @@
 ---
 name: archebase-vi-guide
-version: 3.1.0
+version: 3.1.1
 description: "Use for any ArcheBase-branded design or review. This is a 3-layer VI system: SKILL.md orchestrates progressive disclosure; references contain route/page/domain rules; templates, manifests, tokens, checklists and validators make execution repeatable. Use with the shared pptx skill for PowerPoint work."
 license: Proprietary. Do not redistribute brand assets.
 ---
