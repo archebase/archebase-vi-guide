@@ -12,6 +12,12 @@ They are bundled here so that ArcheBase teams, and agents acting on their behalf
 
 Any use outside ArcheBase-branded work requires written approval from the brand owner.
 
+## Publication authorization
+
+ArcheBase's marketing lead, acting as brand owner for the VI system, authorized the public release of this repository — including the bundled logo files under `assets/logos/` — on 2026-09-25.
+
+This authorization covers ArcheBase publishing these assets in this repository. It does **not** grant third parties a license to reuse, redistribute or modify the marks: they remain proprietary ArcheBase brand assets, and the restrictions above still apply to anyone outside ArcheBase-branded work.
+
 ## Skill instructions
 
 The skill instructions (`SKILL.md`, `references/`, `templates/`, `checklists/`, `tokens/`, `scripts/`) are published for use with ArcheBase brand work. They may be read, copied and adapted by ArcheBase teams and their agents.
