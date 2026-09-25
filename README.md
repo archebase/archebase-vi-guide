@@ -12,15 +12,15 @@ It is built as a **3-layer progressive-disclosure system** rather than a static 
 
 ## When the skill triggers
 
-Any ArcheBase-branded design or review work: PPTX/deck/BP/film, website or product UI, social and press material, video or event screens, image prompts and sourcing, Logo/font/color/template operations, brand review, or WeChat article layout in InkPost.
+Any ArcheBase-branded design or review work: PPTX/deck/BP/film, website or product UI, social and press material, video or event screens, image prompts and sourcing, Logo/font/color/template operations, and brand review.
 
 For `.pptx` / `.potx` work, load this skill **together with** the shared `pptx` skill — that skill owns PowerPoint construction, OOXML, native charts, rendering and technical validation, while this one owns visual direction, source evidence, asset choice and brand QA.
 
 ## Routes
 
-`deck` · `web-ui` · `inkpost-wechat` · `social` · `video-event` · `image` · `review`
+`deck` · `web-ui` · `social` · `video-event` · `image` · `review`
 
-Each route has a playbook in `references/` and a matching checklist in `checklists/`. The InkPost route's reviewable CSS source is `assets/inkpost/archebase-wechat-safe.css`; InkPost embeds it as a built-in preset.
+Each route has a playbook in `references/` and a matching checklist in `checklists/`.
 
 ## Install
 

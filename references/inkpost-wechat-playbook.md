@@ -19,9 +19,7 @@ One article has one primary audience judgment. Put the conclusion before explana
 
 ## 2. Theme source
 
-The shared VI Guide copy is `assets/inkpost/archebase-wechat-safe.css`. It is the reviewable source for the InkPost route and carries preset id `preset-archebase-wechat-safe`.
-
-The InkPost repository's `src/shared/presets/archebase-wechat-safe.ts` embeds the exact same CSS payload in its built-in preset wrapper. When changing the theme, update the shared VI Guide asset first, copy the exact CSS into the InkPost preset wrapper, then run both repositories' validation. The CSS asset is a layout asset, not an official Logo asset.
+The tracked InkPost preset is `src/shared/presets/archebase-wechat-safe.ts` in the InkPost repository. Its preset id is `preset-archebase-wechat-safe`.
 
 The local InkPost app may persist user-created themes separately. Those are user state, not a brand source of truth:
 
