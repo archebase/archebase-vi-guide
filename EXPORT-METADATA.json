@@ -3,9 +3,10 @@
   "name": "archebase-vi-guide",
   "description": "Use whenever a request involves ArcheBase / 智域基石 brand work: VI review, logo selection, brand colors or typography, PPTX/decks/BPs, web/product UI, social or press graphics, video/event screens, image sourcing or generation, or brand templates. Routes the work through the official VI Guide evidence, approved V2 assets, channel playbooks, deterministic validators and human release gates. For PPTX/POTX, use together with the shared pptx skill.",
   "created_at": "2026-09-05T16:59:35Z",
-  "updated_at": "2026-09-25T12:16:00Z",
+  "updated_at": "2026-09-25T12:30:00Z",
   "file_count": 156,
   "changelog": [
+    "2026-09-25m: v3.5.4. Clarified circular display handling: use the supplied 方圆通用 asset, not the ordinary 方形 asset, whenever a surface is circular or may be circularly cropped; documented the circular safe area and current bundled asset in the resolver, manifest and web UI playbook.",
     "2026-09-25l: v3.5.3. Removed superseded historical naming examples from portable operational evidence and page records while preserving the p.33–36 structure records. The approved public name is ArcheBase; lowercase archebase remains technical only. Added naming cleanup to the current release record and kept no pending Guide changes in scope.",
     "2026-09-25k: v3.5.2. Removed historical naming/application strings from the portable operational evidence for Guide pp.33–36 while retaining structure-only page records; updated the evidence register, page evidence map and web UI approval note. The current public name is ArcheBase; no alternate naming is authorized by those pages.",
     "2026-09-25j: v3.5.1. Confirmed ArcheBase as the current public brand name; lowercase archebase remains for GitHub organization, repository and technical paths. Removed obsolete name ambiguity from tokens, evidence, page records and naming blockers, and corrected the legal-name typo in LICENSE.",

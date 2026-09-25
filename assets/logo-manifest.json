@@ -73,7 +73,7 @@
     "pattern": "{color}_{lettering}_{orientation}_{form}.{ext}",
     "color": "白色渐变 / 白色纯色 / 蓝色渐变 / 蓝色纯色 / 黑色",
     "lettering": "无文字 / 中文 / 英文 / 中英文",
-    "orientation": "横版 / 竖版 / 方形 / 方圆通用",
+    "orientation": "横版 / 竖版 / 方形 / 方圆通用（适用于圆形裁切）",
     "form": "组合标 / 文字标 / 图形标",
     "optional_suffix": "delivery variant appended after the form. Observed: 透明底 (explicitly transparent background, SVG+PNG) and 白底 (baked white background, png-hires only). A filename may also carry one of these plus a resolution marker.",
     "resolution_marker": "png-hires only: 高清 = 2048px, 超高清 = 4096px, 超级高清 = 8192px. A png-hires filename with no resolution marker is 512px.",
@@ -83,7 +83,7 @@
     "All gaps below were confirmed on 2026-09-25 to exist in the official delivery folder itself, not introduced by the bundle sync. The bundle is a faithful copy; the shortfalls need the brand owner to re-export, not a local fix.",
     "png-hires coverage is asymmetric: 蓝色渐变 exists as 白底 and transparent at 2048/4096/8192, but 蓝色纯色 only has 白底_高清 (2048), 白底 (512) and transparent (512) — no 4096/8192 and no transparent export above 512. Delivery scope is 待确认 with the brand owner.",
     "png-hires only covers the 无文字_方圆通用_图形标 form. That matches its documented app-icon/avatar/favicon purpose, but whether other forms are intentionally out of scope is 待确认.",
-    "方形 and 方圆通用 are distinct orientations and are not interchangeable (e.g. 蓝色纯色_无文字_方形_图形标 vs 蓝色纯色_无文字_方圆通用_图形标). The placement rule that chooses between them is 待确认.",
+    "For circular display surfaces or placements subject to circular cropping, select the supplied `方圆通用` orientation. Do not use the ordinary `方形` variant and do not apply a local circular mask; the current bundled circular-safe asset is 蓝色纯色_无文字_方圆通用_图形标 with an approved circular safe area.",
     "The families are intentionally asymmetric — 蓝色纯色 has only 2 combinations and 白色纯色 ships no 组合标 at all. A missing combination is not an error: do not improvise or assemble a substitute from other parts."
   ],
   "note": "Verify live modified time before production; official owner decision supersedes this snapshot."

@@ -57,6 +57,7 @@ Where the Guide or an approved component library is silent on a state's visual t
 ## 6. Logo and favicon
 
 1. Resolve the variant through `references/logo-asset-resolver.md` by background, lockup, language and orientation.
+   For circular display surfaces, avatars, or any UI that applies a circular crop, choose the supplied `方圆通用` asset rather than the ordinary `方形` asset. The current bundled circular-safe graphic mark is `assets/logos/svg/蓝色纯色_无文字_方圆通用_图形标.svg`; do not create the result by masking the `方形` file.
 2. Use the SVG for web rendering. Never rasterize the gradient SVGs with ImageMagick's internal renderer.
 3. Use `assets/logos/png-hires/` for favicon, app icon and avatar. These are opaque `白底` or transparent variants — do not substitute one for the other. See the `known_gaps` in `assets/logo-manifest.json`.
 4. Check clear space and minimum size against Guide pp.22–25. If unavailable, mark **待确认**.

@@ -38,7 +38,8 @@ A filename from a superseded generation is **not** a missing variant to reconstr
 1. Use the bundled `assets/logos/` directories first. Read-only list the Feishu folder only when the needed variant is missing or a newer export must be confirmed.
 2. Prefer current `svg` for the source; use the bundled `png` for raster output and `jpg` only for preview/reference.
 3. Treat `old_png` and `old_ai` as legacy until owner confirms otherwise.
-4. Resolve by background (light/dark/image/mono), lockup (graphic/wordmark/combination), language (Chinese/English/bilingual), and orientation (horizontal/vertical/square).
+4. Resolve by background (light/dark/image/mono), lockup (graphic/wordmark/combination), language (Chinese/English/bilingual), and orientation (horizontal/vertical/square/square-to-circle).
+   For a circular display surface or any placement that may be circularly cropped, use the supplied `方圆通用` variant—not the ordinary `方形` variant—because it includes the approved circular safe area. The current bundled circular-safe asset is `蓝色纯色_无文字_方圆通用_图形标.svg` (with matching PNG/PNG-hires); do not create a circular crop from `方形` by scaling or masking.
 5. Record filename, extension, source directory, remote token/reference, modified time, and legacy status in the decision record and manifest.
 6. Insert the supplied original file; never redraw, trace, recolor, skew, stretch, add effects, or generate a replacement.
 7. Check clear space, minimum size, contrast and crop against Guide pp.22–25 or approved asset notes. If unavailable, mark `待确认`.
