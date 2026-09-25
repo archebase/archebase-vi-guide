@@ -16,11 +16,11 @@ reviewed_date: "2026-09-25"
 
 ## Visible elements
 
-# ARCHBASE ARCHBASE ARCHBASE
+Historical naming/application example text (omitted from the portable operational record)
 
 ## Rule extracted
 
-The page shows `ARCHBASE` and `# ARCHBASE` as Guide examples. The current approved public brand name is `ArcheBase`; these strings are source-page example text, not current naming authorization. `archebase` remains the lowercase technical identifier for organization/repository/path contexts.
+The page is retained as a naming/application structure record. The current approved public brand name is `ArcheBase`; historical source text is intentionally omitted from operational guidance. Lowercase `archebase` remains the technical identifier for organization/repository/path contexts.
 
 ## Applies to
 

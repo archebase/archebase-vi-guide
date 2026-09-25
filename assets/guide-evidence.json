@@ -68,12 +68,12 @@
     {
       "id": "naming.examples",
       "pages": [33, 34, 35, 36],
-      "status": "explicit_visual_examples",
-      "examples": ["ArchBase", "ARCHBASE", "# ARCHBASE", "Explore 01"],
+      "status": "source_page_structure_only",
+      "examples": ["naming/application examples"],
       "current_approved_name": "ArcheBase",
       "technical_identifier": "archebase",
-      "example_status": "The ArchBase/ARCHBASE strings are source-page examples only; they are not the current approved public brand name.",
-      "do_not_infer": ["Do not replace the current ArcheBase name with ArchBase/ARCHBASE based on these Guide examples.", "Do not treat the examples as universal layout templates or approved product/domain lockups."]
+      "example_status": "Historical source-page naming/application strings are intentionally excluded from portable operational evidence. The current public name is ArcheBase; lowercase archebase is technical only.",
+      "do_not_infer": ["Do not infer alternate current brand names or lockups from the source-page structure.", "Do not treat the source page as permission to rename the company, product or domain."]
     },
     {
       "id": "application.boards",

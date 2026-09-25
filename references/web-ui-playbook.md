@@ -76,6 +76,6 @@ Where the Guide or an approved component library is silent on a state's visual t
 - Exact `#1E2124` compositing and component-role implementation.
 - Logo clear space and minimum size in pixels.
 - Font license and approved weights for web embedding.
-- Approved public name is `ArcheBase`; `ArchBase`/`ARCHBASE` in p.33–36 are Guide examples, not current UI naming.
+- Approved public name is `ArcheBase`; p.33–36 do not authorize alternate current UI naming.
 - Color conversion for screens vs print.
 - The rule selecting 方形 vs 方圆通用 orientation.
