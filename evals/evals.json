@@ -27,7 +27,7 @@
     },
     {
       "id": 3,
-      "prompt": "We need a social graphic using a generated robot image, the phrase 'WISDOM BUILDS INTELLIGENCE', a customer metric, and the ArcheBase logo. Give the production checklist and identify any blockers.",
+      "prompt": "We need a social graphic using a generated robot image, the phrase 'WISDOM BUILDS INTELLIGENCE', a customer metric, and the ArcheBase logo. Use creative mode unless strict VI compliance is explicitly requested. Give the production checklist and identify any hard blockers versus optional brand departures.",
       "expected_output": "The agent loads the social and image-generation playbooks, uses p.27 phrase evidence, checks rights/provenance/claims, forbids generated logos/text, and blocks publication until unresolved approvals are assigned.",
       "files": [],
       "expectations": [
@@ -35,6 +35,18 @@
         "The response requires provenance, image/customer/third-party rights and a source for the metric.",
         "The response checks crops, first-frame legibility, official logo selection and asset immutability.",
         "The response names blockers and gives a release verdict rather than treating the graphic as automatically publishable."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Audit the 46-page ArcheBase VI Guide implementation. Confirm that every page has a loadable record, that pages 37–46 are treated as visual references rather than mandatory templates, and that a social campaign can use creative mode without implying strict VI approval.",
+      "expected_output": "The response reports page-level coverage, evidence types, route/mode mappings, do-not-infer boundaries, and the distinction between hard boundaries and creative latitude.",
+      "files": [],
+      "expectations": [
+        "All 46 Guide pages are represented by page-level records with source, evidence type, confidence and do-not-infer fields.",
+        "Visual application boards are not presented as mandatory templates or as OCR-derived hard rules.",
+        "Creative mode is described as opt-in platform-native latitude while Logo integrity, rights, claims, privacy and human approval remain hard boundaries.",
+        "The response identifies the coverage validator and its failure behavior."
       ]
     }
   ]

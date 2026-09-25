@@ -44,8 +44,9 @@ It must not become a 50-page dump. If a task needs detail, load a reference file
 
 Layer 3 should contain executable or fillable support files, not more prose:
 
-- `assets/guide-page-index.json`: page-group routing for the official Guide, with the source hash and evidence-register pointer.
+- `assets/guide-page-index.json`: page-group routing for the official Guide, with the source hash, evidence-register pointer and page-record pointer.
 - `assets/guide-evidence.json`: compact, verified page-level evidence for numeric/color/font claims; preserves `do_not_infer` boundaries without embedding the large PDF.
+- `references/guide-pages/page-*.md`: 46 loadable records, one per Guide page, each mapped to route/mode, evidence type, confidence and do-not-infer boundaries.
 - `assets/logo-manifest.json`: generated from a read-only listing of the approved Drive folder; records current filename, extension, asset family, source directory, token/reference, modified time, and legacy status. Never stores credentials.
 - `tokens/archebase.tokens.json`: semantic colors, explicit p.28 ratio and p.30–32 neutral evidence, type families, logo policy, and remaining `待确认` implementation fields.
 - `templates/brief.md`: mode/route/audience/dimensions/judgment/evidence/assets/risk.
