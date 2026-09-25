@@ -70,7 +70,10 @@
       "pages": [33, 34, 35, 36],
       "status": "explicit_visual_examples",
       "examples": ["ArchBase", "ARCHBASE", "# ARCHBASE", "Explore 01"],
-      "do_not_infer": ["These are Guide examples, not an automatic approval to rename the company, product, domain or lockup. Any naming conflict remains an owner decision."]
+      "current_approved_name": "ArcheBase",
+      "technical_identifier": "archebase",
+      "example_status": "The ArchBase/ARCHBASE strings are source-page examples only; they are not the current approved public brand name.",
+      "do_not_infer": ["Do not replace the current ArcheBase name with ArchBase/ARCHBASE based on these Guide examples.", "Do not treat the examples as universal layout templates or approved product/domain lockups."]
     },
     {
       "id": "application.boards",
@@ -86,7 +89,7 @@
     "exact neutral compositing and CSS alpha implementation",
     "logo clear space and minimum size",
     "font license, exact files and production weight mapping",
-    "ArcheBase vs ArchBase naming and lockup approval",
+    "ArcheBase lockup and domain applications for specific contexts",
     "media color conversion and print conversion",
     "channel-specific application rules for the visual boards"
   ]

@@ -20,7 +20,7 @@ Explore01
 
 ## Rule extracted
 
-The pages show ArchBase, ARCHBASE, # ARCHBASE and Explore 01 as Guide examples. They are reference examples, not automatic permission to rename the company, product, domain or lockup.
+The page shows `Explore 01` as a Guide example. The current approved public brand name is `ArcheBase`; this example is not a current naming or product-lockup authorization. `archebase` remains the lowercase technical identifier for organization/repository/path contexts.
 
 ## Applies to
 

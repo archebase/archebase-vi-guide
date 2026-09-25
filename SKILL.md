@@ -3,7 +3,7 @@ name: archebase-vi-guide
 description: "Use whenever a request involves ArcheBase / 智域基石 brand work: VI review, logo selection, brand colors or typography, PPTX/decks/BPs, web/product UI, social or press graphics, video/event screens, image sourcing or generation, or brand templates. Routes the work through the official VI Guide evidence, approved V2 assets, channel playbooks, deterministic validators and human release gates. For PPTX/POTX, use together with the shared pptx skill."
 license: Proprietary. Do not redistribute brand assets.
 metadata:
-  version: "3.5.0"
+  version: "3.5.1"
   source: "ArcheBase VI Guide System"
 compatibility: "Requires a filesystem-capable skill loader. Python 3 runs validators; librsvg and ImageMagick are optional for logo render verification; PyMuPDF is optional for --pdf evidence verification."
 ---
@@ -86,7 +86,7 @@ Before design, fill `templates/brief.md`. Then:
 
 ## Mandatory blocking conditions
 
-Block publication when any of these is unresolved: invented/incorrect Logo, Logo rasterized with a renderer that does not match the approved asset, missing asset rights, uncertain public claim or customer data, unresolved `ArcheBase`/`ArchBase`/`ARCHBASE` naming, unapproved color/type rule, unreadable or overflowing output, missing source for material metrics, or failed technical/visual QA.
+Block publication when any of these is unresolved: invented/incorrect Logo, Logo rasterized with a renderer that does not match the approved asset, missing asset rights, uncertain public claim or customer data, use of a current public name other than approved `ArcheBase`, unapproved lockup/domain naming change, unapproved color/type rule, unreadable or overflowing output, missing source for material metrics, or failed technical/visual QA.
 
 ## Output contract
 

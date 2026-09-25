@@ -123,7 +123,7 @@ Block publication when any of these is unresolved:
 - a mark rasterized with a renderer that does not match the approved asset,
 - missing asset rights,
 - a missing or unapproved asset variant,
-- an unresolved `ArcheBase` / `ArchBase` / `ARCHBASE` naming question,
+- use of a name other than the approved public `ArcheBase` in current work, or an unapproved lockup/domain naming change,
 - an unapproved color or type rule,
 - missing source for a material metric,
 - a manifest or bundle integrity failure.

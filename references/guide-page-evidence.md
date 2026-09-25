@@ -16,7 +16,7 @@ Source: official Feishu PDF `智域基石vi基础.pdf`, 46 pages. Always inspect
 | 29 | Main colors: `#0032FF`, `#7172FA`, `#619AFD`, `#46CFFF`. |
 | 30–31 | `#1E2124` neutral background examples at 100% and 5%; the visual levels are explicit, while exact compositing and component-role mapping remain unconfirmed. |
 | 32 | `#1E2124` text levels at 100%, 70% and 50%; do not infer a universal CSS or export implementation. |
-| 33–36 | `ArchBase`, `ARCHBASE`, `Explore 01` examples; naming/lockup relationships remain approval items. |
+| 33–36 | `ArchBase`, `ARCHBASE`, `Explore 01` appear as source-page examples. The current approved public brand name is `ArcheBase`; only context-specific lockup/domain applications remain approval items. |
 | 37–46 | Visual application boards; inspect each rendered page for composition, image treatment, grid, whitespace and scale. No OCR-only inference. |
 
 For each page record: Page, Visible elements, Rule extracted, Evidence type (explicit/visual inference/unresolved), Applies to, Do not infer, Confidence, Reviewer/date. A visual inference cannot become an official rule without approval.
