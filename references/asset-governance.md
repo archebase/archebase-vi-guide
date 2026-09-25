@@ -74,7 +74,7 @@ When the mark genuinely must change, the asset is not updated; it is **replaced 
 
 Before trusting the bundle, before a large brand deliverable, or whenever the source folder may have moved on, compare the two directly. This is read-only on the delivery.
 
-1. Locate the delivery folder. The manifest records it as `source_local_path` (currently `~/Downloads/智域基石 Logo V2`) and as the Feishu `source_folder` URL.
+1. Locate the delivery folder from the approved `source_folder` URL. `source_local_path` is optional audit metadata and may be null in the portable skill; never require a machine-specific Downloads path.
 2. Compare every bundled asset against its counterpart with SHA-256 — not size or timestamps.
 3. Run `scripts/render_logo.sh --verify-all` to confirm every SVG still renders to its bundled PNG bit-for-bit.
 4. Record the outcome in the manifest's `verified.reverified` block: date, method, result.

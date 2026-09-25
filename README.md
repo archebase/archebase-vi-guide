@@ -79,7 +79,7 @@ scripts/render_logo.sh --verify-all
 ## Source hierarchy
 
 1. Current approved asset package and explicit brand-owner decisions.
-2. The official 46-page `智域基石vi基础.pdf`, represented in the compact `assets/guide-evidence.json` register and verified by `scripts/validate_guide_evidence.py`.
+2. The official 46-page `《智域基石 VI 基础》` (source filename `智域基石vi基础.pdf`), represented in the compact `assets/guide-evidence.json` register and verified by `scripts/validate_guide_evidence.py`.
 3. The interpretations in `references/`, each citing Guide pages and the evidence boundary.
 4. Temporary heuristics, always labeled `待确认`.
 

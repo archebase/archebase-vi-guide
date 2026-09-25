@@ -1,8 +1,11 @@
 ---
 name: archebase-vi-guide
-version: 3.3.0
-description: "Use for any ArcheBase-branded design or review. This is a 3-layer VI system: SKILL.md orchestrates progressive disclosure; references contain route/page/domain rules; templates, manifests, tokens, checklists and validators make execution repeatable. Use with the shared pptx skill for PowerPoint work."
+description: "Use whenever a request involves ArcheBase / 智域基石 brand work: VI review, logo selection, brand colors or typography, PPTX/decks/BPs, web/product UI, social or press graphics, video/event screens, image sourcing or generation, or brand templates. Routes the work through the official VI Guide evidence, approved V2 assets, channel playbooks, deterministic validators and human release gates. For PPTX/POTX, use together with the shared pptx skill."
 license: Proprietary. Do not redistribute brand assets.
+metadata:
+  version: "3.3.1"
+  source: "ArcheBase VI Guide System"
+compatibility: "Requires a filesystem-capable skill loader. Python 3 runs validators; librsvg and ImageMagick are optional for logo render verification; PyMuPDF is optional for --pdf evidence verification."
 ---
 
 # ArcheBase VI Guide System

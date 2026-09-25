@@ -52,6 +52,8 @@ def main(argv: list[str]) -> int:
         fail(f'source.pages must be 46, got {source.get("pages")!r}', failures)
     if source.get('local_verified_path') is not None:
         fail('source.local_verified_path must remain null for portability', failures)
+    if not source.get('display_name') or not source.get('source_filename'):
+        fail('source.display_name and source.source_filename are required', failures)
     if not isinstance(source.get('sha256'), str) or not re.fullmatch(r'[0-9a-f]{64}', source['sha256']):
         fail('source.sha256 must be a 64-character lowercase SHA-256 digest', failures)
 

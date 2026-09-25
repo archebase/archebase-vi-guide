@@ -1,7 +1,8 @@
 {
   "source_folder": "https://archebase.feishu.cn/drive/folder/MBewfd14ll34N0dJINNcQnQqn4c",
   "source_delivery": "智域基石 Logo V2 (local delivery bundle, png/svg/jpg exports)",
-  "source_local_path": "~/Downloads/智域基石 Logo V2",
+  "source_local_path": null,
+  "source_local_path_note": "A local Downloads copy was used for the 2026-09-25 audit; the portable skill intentionally stores no machine-specific path.",
   "synced_at": "2026-09-22",
   "resynced_checked_at": "2026-09-25",
   "approved_generation": {
