@@ -18,21 +18,10 @@ Load only the references needed for the current route.
 |---|---|
 | `deck` | `deck-playbook.md` (also load the shared `pptx` skill) |
 | `web-ui` | `web-ui-playbook.md` |
-| `inkpost-wechat` | `inkpost-wechat-playbook.md` |
 | `social` | `social-playbook.md` |
 | `video-event` | `video-event-playbook.md` |
 | `image` | `image-generation-playbook.md` |
 | `review` | `review-rubric.md` |
-
-## InkPost / WeChat route
-
-| Reference | When to load |
-|---|---|
-| `inkpost-wechat-playbook.md` | **Before creating, correcting, importing or exporting** an ArcheBase WeChat article in InkPost |
-| `../checklists/inkpost-wechat.md` | **Before delivery** of InkPost-rendered Markdown/CSS |
-| `../scripts/validate_inkpost_css.py` | **Against the exact CSS being exported**, before visual QA |
-
-The route is a shared VI Guide route, not a copy of a local InkPost skill. InkPost repository conventions remain in the InkPost project; brand evidence and release rules remain here.
 
 ## Supporting references
 
