@@ -1,0 +1,11 @@
+{
+  "id": "dc47982c-6a2b-4ed1-980b-679e91647ac2",
+  "name": "archebase-vi-guide",
+  "description": "Use for any ArcheBase-branded design or review. This is a 3-layer VI system: SKILL.md orchestrates progressive disclosure; references contain route/page/domain rules; templates, manifests, tokens, checklists and validators make execution repeatable. Use with shared pptx for PowerPoint work.",
+  "created_at": "2026-09-05T16:59:35Z",
+  "updated_at": "2026-09-22T05:30:00Z",
+  "file_count": 86,
+  "changelog": [
+    "2026-09-22: synced logo assets to 智域基石 Logo V2; bundled PNG raster delivery (assets/logos/png) and high-res icon exports (assets/logos/png-hires); added rendering rule because ImageMagick's internal SVG renderer mangles the gradient SVGs; added scripts/render_logo.sh; extended scripts/validate_logo_bundle.py"
+  ]
+}

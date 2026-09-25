@@ -1,0 +1,42 @@
+{
+  "source_folder": "https://archebase.feishu.cn/drive/folder/MBewfd14ll34N0dJINNcQnQqn4c",
+  "source_delivery": "智域基石 Logo V2 (local delivery bundle, png/svg/jpg exports)",
+  "synced_at": "2026-09-22",
+  "local_bundle": {
+    "svg": "assets/logos/svg/",
+    "png": "assets/logos/png/",
+    "png_hires": "assets/logos/png-hires/"
+  },
+  "policy": {
+    "svg": "source of truth for geometry and color",
+    "png": "bundled raster delivery; use directly for web/social/office export",
+    "png_hires": "large icon exports for app icon, avatar, favicon, large-format",
+    "jpg": "preview only; not bundled; fetch from the source folder when needed",
+    "old_*": "legacy; owner approval required"
+  },
+  "inventory": {
+    "svg": 25,
+    "png": 24,
+    "png_hires": 9
+  },
+  "verified": {
+    "svg_vs_png_pairs": 24,
+    "method": "rsvg-convert render of each SVG compared against bundled PNG at native size",
+    "result": "all pairs match at RMSE 0",
+    "date": "2026-09-22"
+  },
+  "rendering": {
+    "required": "rsvg-convert (librsvg) or another spec-complete SVG renderer",
+    "known_bad": "ImageMagick's internal MSVG/XML renderer mangles the gradient stops in these files; it renders them darker and flattens parts of the mark. Do not use `magick file.svg` for logo output.",
+    "safe_fallback": "Use the bundled PNG directly instead of converting the SVG yourself.",
+    "after_render": "Verify against the bundled PNG with `magick compare -metric RMSE` before placing the logo."
+  },
+  "naming": {
+    "pattern": "{color}_{lettering}_{orientation}_{form}.{ext}",
+    "color": "白色渐变 / 白色纯色 / 蓝色渐变 / 蓝色纯色 / 黑色",
+    "lettering": "无文字 / 中文 / 英文 / 中英文",
+    "orientation": "横版 / 竖版 / 方形 / 方圆通用",
+    "form": "组合标 / 文字标 / 图形标"
+  },
+  "note": "Verify live modified time before production; official owner decision supersedes this snapshot."
+}
