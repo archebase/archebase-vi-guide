@@ -44,23 +44,31 @@ Never store credentials, OAuth codes, access tokens or private authorization URL
 The bundle's counts and the manifest's counts must agree, and every SVG must have a matching PNG at the same native size.
 
 ```sh
-python3 scripts/validate_logo_bundle.py     # pairs, empty files, alpha sanity
-python3 scripts/validate_asset_reference.py # manifest vs bundle, dangling and legacy references
+python3 scripts/validate_logo_bundle.py      # pairs, empty files, alpha sanity
+python3 scripts/validate_asset_reference.py  # manifest vs bundle, dangling and legacy references
+python3 scripts/validate_asset_integrity.py  # SHA-256 pins: assets unmodified
 ```
 
-Run both before and after any change to `assets/`. Both are deterministic and read-only. `scripts/render_logo.sh --verify-all` additionally re-renders every SVG and compares it against the bundled PNG at native size.
+Run all three before and after any change to `assets/`. All are deterministic and read-only. `scripts/render_logo.sh --verify-all` additionally re-renders every SVG and compares it against the bundled PNG at native size.
 
 A count mismatch between the manifest and the bundle is a record defect: fix the record, not the count, unless a file actually moved.
 
-## 5. Adding or updating an asset
+## 5. Brand assets are immutable
 
-1. Confirm the change is approved by the brand owner and record who approved it and when.
-2. Edit the **SVG**, which is the editable vector master. Open it directly in Illustrator, Figma or Inkscape. The delivery supplies no `.ai`, and none is needed — do not go looking for `.ai` drafts to change the mark, and do not re-export an asset from a lossy copy. The wordmark is outlined rather than live text, so change the paths, or re-outline from a type source when the lettering itself must change.
-3. Keep the official filename. Do not rename assets to a local convention — the names are the contract with the source delivery.
-4. Add both the SVG source and the matching PNG so the pair check stays green. Regenerate the PNG through `scripts/render_logo.sh`, never through ImageMagick's internal SVG renderer.
-5. Update `assets/logo-manifest.json`: inventory, verification record, date, and any new `known_gaps`.
-6. Run both validators and `scripts/render_logo.sh --verify-all`.
-7. Increment the skill version and add a changelog entry in `EXPORT-METADATA.json`.
+**A bundled brand asset is never edited.** Not to fix a curve, not to adjust a gradient, not to add a variant, not to "improve" an export. The asset is the official mark as the brand owner issued it. `scripts/validate_asset_integrity.py` pins every file by SHA-256 and fails CI on any modification, addition or deletion, so this is enforced rather than merely asked for.
+
+Being the editable vector master is about *using* the SVG — measuring it, placing it, exporting approved derivatives from it — not about altering the mark.
+
+When the mark genuinely must change, the asset is not updated; it is **replaced by a new official delivery**:
+
+1. The brand owner issues a new delivery. Record who approved it and when.
+2. Re-sync the affected assets wholesale from that delivery. Do not hand-edit a file to reconcile the two.
+3. Keep the official filenames. Do not rename assets to a local convention — the names are the contract with the delivery.
+4. Add both the SVG source and its matching PNG so the pair check stays green. Generate the PNG through `scripts/render_logo.sh`, never through ImageMagick's internal SVG renderer.
+5. Update `assets/logo-manifest.json`: inventory, verification record, dates, `source_delivery`, and any new `known_gaps`.
+6. Run every validator, then `scripts/render_logo.sh --verify-all`.
+7. Regenerate the pins as part of the same change: `python3 scripts/validate_asset_integrity.py --write`. This step *is* the recorded act of accepting the delivery — never run it to silence a failure caused by an edit.
+8. Increment the skill version and add a changelog entry in `EXPORT-METADATA.json`.
 
 ## 5a. Re-verifying the bundle against the delivery
 

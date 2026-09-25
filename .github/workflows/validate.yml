@@ -23,6 +23,9 @@ jobs:
       - name: Logo bundle integrity
         run: python3 scripts/validate_logo_bundle.py
 
+      - name: Brand assets unmodified (SHA-256 pins)
+        run: python3 scripts/validate_asset_integrity.py
+
       - name: Semantic tokens against the approved Guide set
         run: python3 scripts/validate_tokens.py
 

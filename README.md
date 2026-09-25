@@ -43,6 +43,8 @@ The logo bundle is synced to the official delivery `智域基石 Logo V2` (2026-
 
 Asset filenames follow the official brand naming pattern `{color}_{lettering}_{orientation}_{form}` and are kept in their original Chinese form on purpose — renaming them would break the link to the source delivery. See `assets/logo-manifest.json` for the inventory and `references/logo-asset-resolver.md` for the resolution procedure.
 
+The SVGs are the **editable vector master** — open them directly in Illustrator, Figma or Inkscape; no `.ai` is supplied and none is needed. Being editable is about using the master, not altering it: the bundled assets are **immutable**, and `scripts/validate_asset_integrity.py` pins every one by SHA-256 so CI fails if a byte changes. A changed mark is a new official delivery, never a local edit.
+
 ### Renderer warning
 
 The gradient logo SVGs use multiple stops with `stop-opacity`. ImageMagick's internal SVG renderer renders them incorrectly — output is darker and parts of the mark are flattened. Use `rsvg-convert` (librsvg) or a browser engine, never `magick file.svg`. The simplest correct path is to use the bundled PNG directly.
@@ -57,11 +59,12 @@ magick compare -metric RMSE /tmp/render.png assets/logos/png/<name>.png null:   
 ## Validators
 
 ```sh
-python3 scripts/validate_logo_bundle.py    # SVG/PNG pair and bundle integrity
-python3 scripts/validate_tokens.py         # tokens against the approved Guide color set
+python3 scripts/validate_logo_bundle.py     # SVG/PNG pair and bundle integrity
+python3 scripts/validate_asset_integrity.py # SHA-256 pins: brand assets unmodified
+python3 scripts/validate_tokens.py          # tokens against the approved Guide color set
 python3 scripts/validate_asset_reference.py # manifest vs bundle; dangling/legacy references
-python3 scripts/check_release_report.py    # release report completeness
-python3 scripts/check_doc_links.py         # markdown and reference-index link integrity
+python3 scripts/check_release_report.py     # release report completeness
+python3 scripts/check_doc_links.py          # markdown and reference-index link integrity
 ```
 
 All are deterministic, read-only, and exit non-zero on failure. They run in CI on every push and pull request via [`.github/workflows/validate.yml`](.github/workflows/validate.yml).

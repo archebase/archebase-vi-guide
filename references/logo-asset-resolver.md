@@ -13,7 +13,9 @@ Current delivery: `智域基石 Logo V2` (synced 2026-09-22). See `assets/logo-m
 
 The `svg/` files are the **editable vector master**, not a web-only export. Open them directly in Illustrator, Figma or Inkscape — **no `.ai` file is needed or supplied**, and the absence of one is not a gap to fill. All 25 are pure vector: `<path>` geometry, real `<linearGradient>` defs, a `viewBox`, no embedded raster and no external references.
 
-The wordmark is outlined, so the SVGs contain no live `<text>`, which is standard for a logo and keeps rendering identical across tools. Edit the paths directly; if the lettering itself has to change, re-outline it from a type source rather than retyping into the SVG.
+The wordmark is outlined, so the SVGs contain no live `<text>`, which is standard for a logo and keeps rendering identical across tools.
+
+"Editable" means the vector master can be opened, measured, placed and exported from directly — it does **not** authorise altering the mark. The bundled assets are **immutable**: never redraw, trace, recolor, skew, stretch, add effects to, or regenerate them, and never hand-edit a file to invent a variant. `scripts/validate_asset_integrity.py` pins every asset by SHA-256 and fails CI if one changes. If the mark itself must change, that is a new official delivery — see `references/asset-governance.md`.
 
 Each SVG has a matching PNG at the same native size in `assets/logos/png/`. All 25 pairs verified at RMSE 0 on 2026-09-22.
 

@@ -41,8 +41,10 @@ Load only the references needed for the current route.
 | `checklists/*.md` | Route-specific execution gates |
 | `tokens/archebase.tokens.json` | Semantic color and type tokens |
 | `assets/logo-manifest.json` | Logo inventory, naming rules, verification and known gaps |
+| `assets/logo-checksums.json` | SHA-256 pins making the brand assets immutable |
 | `assets/guide-page-index.json` | Guide page-group map |
 | `scripts/validate_logo_bundle.py` | SVG/PNG pair and bundle integrity |
+| `scripts/validate_asset_integrity.py` | Pinned-asset check: fails if any brand asset changed |
 | `scripts/validate_tokens.py` | Token file against the approved Guide color set |
 | `scripts/validate_asset_reference.py` | Manifest vs bundle, dangling and legacy references |
 | `scripts/check_release_report.py` | Release report completeness |
