@@ -46,6 +46,7 @@ The route is a shared VI Guide route, not a copy of a local InkPost skill. InkPo
 
 | File | Purpose |
 |---|---|
+| `assets/inkpost/archebase-wechat-safe.css` | Shared reviewable InkPost WeChat theme source; load when editing or validating the InkPost preset |
 | `templates/brief.md` | Per-task brief; fill before designing |
 | `templates/page-inspection-record.md` | One record per Guide page inspected |
 | `templates/decision-record.md` | Choices, rationale, source page, approver |
