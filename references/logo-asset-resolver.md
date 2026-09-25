@@ -7,9 +7,13 @@ Current delivery: `智域基石 Logo V2` (synced 2026-09-22). See `assets/logo-m
 
 | Directory | Use for |
 |---|---|
-| `assets/logos/svg/` | Source of truth for geometry and color |
+| `assets/logos/svg/` | Source of truth for geometry and color, and the editable vector master |
 | `assets/logos/png/` | Raster delivery for web, social, office and deck export |
 | `assets/logos/png-hires/` | App icon, avatar, favicon and large-format icon use |
+
+The `svg/` files are the **editable vector master**, not a web-only export. Open them directly in Illustrator, Figma or Inkscape — **no `.ai` file is needed or supplied**, and the absence of one is not a gap to fill. All 25 are pure vector: `<path>` geometry, real `<linearGradient>` defs, a `viewBox`, no embedded raster and no external references.
+
+The wordmark is outlined, so the SVGs contain no live `<text>`, which is standard for a logo and keeps rendering identical across tools. Edit the paths directly; if the lettering itself has to change, re-outline it from a type source rather than retyping into the SVG.
 
 Each SVG has a matching PNG at the same native size in `assets/logos/png/`. All 25 pairs verified at RMSE 0 on 2026-09-22.
 

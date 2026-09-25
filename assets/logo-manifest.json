@@ -23,11 +23,18 @@
     "png_hires": "assets/logos/png-hires/"
   },
   "policy": {
-    "svg": "source of truth for geometry and color",
+    "svg": "source of truth for geometry and color, AND the editable vector master — open it directly in Illustrator, Figma or Inkscape",
     "png": "bundled raster delivery; use directly for web/social/office export",
     "png_hires": "large icon exports for app icon, avatar, favicon, large-format",
     "jpg": "preview only; not bundled; fetch from the source folder when needed",
     "old_*": "legacy; owner approval required"
+  },
+  "vector_source": {
+    "master": "assets/logos/svg/*.svg",
+    "editable": true,
+    "no_ai_required": "The delivery ships no .ai file, and none is required: the SVG is the editable vector source. Do not treat the absence of .ai as a gap, and do not go hunting for .ai drafts in order to edit the mark.",
+    "verified": "All 25 SVGs are pure vector — <path> geometry, real <linearGradient> defs, no embedded raster <image>, no external references, and a viewBox. Verified 2026-09-25.",
+    "outlined_text": "The wordmark is outlined: the SVGs contain no live <text> element, which is standard for a logo and keeps rendering identical everywhere. Edit the paths directly, or re-outline from a type source if the lettering itself has to change."
   },
   "inventory": {
     "svg": 25,

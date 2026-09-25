@@ -55,9 +55,9 @@ A count mismatch between the manifest and the bundle is a record defect: fix the
 ## 5. Adding or updating an asset
 
 1. Confirm the change is approved by the brand owner and record who approved it and when.
-2. Export from the approved source. Do not re-export an asset by re-rendering a lossy copy.
+2. Edit the **SVG**, which is the editable vector master. Open it directly in Illustrator, Figma or Inkscape. The delivery supplies no `.ai`, and none is needed — do not go looking for `.ai` drafts to change the mark, and do not re-export an asset from a lossy copy. The wordmark is outlined rather than live text, so change the paths, or re-outline from a type source when the lettering itself must change.
 3. Keep the official filename. Do not rename assets to a local convention — the names are the contract with the source delivery.
-4. Add both the SVG source and the matching PNG so the pair check stays green.
+4. Add both the SVG source and the matching PNG so the pair check stays green. Regenerate the PNG through `scripts/render_logo.sh`, never through ImageMagick's internal SVG renderer.
 5. Update `assets/logo-manifest.json`: inventory, verification record, date, and any new `known_gaps`.
 6. Run both validators and `scripts/render_logo.sh --verify-all`.
 7. Increment the skill version and add a changelog entry in `EXPORT-METADATA.json`.
