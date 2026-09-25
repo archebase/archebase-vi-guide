@@ -8,7 +8,7 @@ It is built as a **3-layer progressive-disclosure system** rather than a static 
 |---|---|---|
 | 1 | `SKILL.md` | Triggers, source hierarchy, route selection, compiler, release gates, output contract |
 | 2 | `references/` | Guide page evidence, logo resolver, visual grammar, route playbooks, review rubric, release procedures |
-| 3 | `templates/`, `checklists/`, `tokens/`, `assets/`, `scripts/` | Fillable records, semantic tokens, approved asset manifest, deterministic validators |
+| 3 | `templates/`, `checklists/`, `tokens/`, `assets/`, `scripts/`, `evals/` | Fillable records, Guide evidence register, semantic tokens, approved asset manifest, deterministic validators and eval prompts |
 
 ## When the skill triggers
 
@@ -61,6 +61,7 @@ magick compare -metric RMSE /tmp/render.png assets/logos/png/<name>.png null:   
 ```sh
 python3 scripts/validate_logo_bundle.py     # SVG/PNG pair and bundle integrity
 python3 scripts/validate_asset_integrity.py # SHA-256 pins: brand assets unmodified
+python3 scripts/validate_guide_evidence.py  # page evidence register and optional PDF hash/page-count check
 python3 scripts/validate_tokens.py          # tokens against the approved Guide color set
 python3 scripts/validate_asset_reference.py # manifest vs bundle; dangling/legacy references
 python3 scripts/check_release_report.py     # release report completeness
@@ -78,14 +79,14 @@ scripts/render_logo.sh --verify-all
 ## Source hierarchy
 
 1. Current approved asset package and explicit brand-owner decisions.
-2. The official 46-page `智域基石vi基础.pdf`.
-3. The interpretations in `references/`, each citing Guide pages.
+2. The official 46-page `智域基石vi基础.pdf`, represented in the compact `assets/guide-evidence.json` register and verified by `scripts/validate_guide_evidence.py`.
+3. The interpretations in `references/`, each citing Guide pages and the evidence boundary.
 4. Temporary heuristics, always labeled `待确认`.
 
 On conflict, stop and record the conflict. Never average conflicting brand values.
 
 ## License and brand assets
 
-The skill instructions are published so ArcheBase teams and their agents can apply the brand system consistently. The logo files and the VI Guide are **proprietary brand assets of ArcheBase** and are not licensed for redistribution or reuse outside ArcheBase-branded work. See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
+The skill instructions are published so ArcheBase teams and their agents can apply the brand system consistently. The compact evidence register is derived from the official VI Guide, whose full PDF remains at the approved source location and is not bundled. The logo files and the VI Guide are **proprietary brand assets of ArcheBase** and are not licensed for redistribution or reuse outside ArcheBase-branded work. See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
 
 Do not redraw, trace, recolor, skew, stretch, add effects to, or regenerate the official marks.

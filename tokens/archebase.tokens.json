@@ -1,1 +1,48 @@
-{"version":"3.0.0","source":"Official VI Guide pp.27-32; p.28 role mapping pending approval","colors":{"AB_BLUE_1":"#0032FF","AB_BLUE_2":"#7172FA","AB_BLUE_3":"#619AFD","AB_BLUE_4":"#46CFFF","AB_CHARCOAL":"#1E2124"},"type":{"zh":"思源黑体","latin":"Poppins","weights":"approved weight required"},"unconfirmed":["p28_ratio_roles","logo_clear_space","logo_minimum_size","font_license_and_weights","ArcheBase_vs_ArchBase_naming","media_color_conversion"]}
+{
+  "version": "3.3.0",
+  "source": "Official VI Guide pp.26-32; verified page-geometry evidence in assets/guide-evidence.json",
+  "colors": {
+    "AB_BLUE_1": "#0032FF",
+    "AB_BLUE_2": "#7172FA",
+    "AB_BLUE_3": "#619AFD",
+    "AB_BLUE_4": "#46CFFF",
+    "AB_CHARCOAL": "#1E2124"
+  },
+  "color_ratio": {
+    "source_page": 28,
+    "mapping_percent": {
+      "AB_BLUE_1": 50,
+      "AB_BLUE_2": 25,
+      "AB_BLUE_3": 10,
+      "AB_BLUE_4": 5
+    },
+    "labeled_percent_total": 90,
+    "unmapped_percent": 10,
+    "unmapped_role": "not stated in the Guide",
+    "status": "explicit_visual_evidence; not a per-component allocation without a separate decision"
+  },
+  "neutral_levels": {
+    "source_pages": [30, 31, 32],
+    "background_percent": [100, 5],
+    "text_percent": [100, 70, 50],
+    "status": "explicit_visual_examples; compositing and component-role implementation remain unconfirmed"
+  },
+  "type": {
+    "zh": "思源黑体",
+    "latin": "Poppins",
+    "displayed_weights": {
+      "zh": ["粗黑", "黑", "细黑"],
+      "latin": ["ExtraBold", "SemiBold", "Regular"]
+    },
+    "weights": "displayed in Guide; exact production files/licensing remain unconfirmed"
+  },
+  "unconfirmed": [
+    "p28_semantic_role_names_and_per_component_allocation",
+    "neutral_compositing_and_component_role_mapping",
+    "logo_clear_space",
+    "logo_minimum_size",
+    "font_license_and_exact_production_files",
+    "ArcheBase_vs_ArchBase_naming",
+    "media_color_conversion"
+  ]
+}

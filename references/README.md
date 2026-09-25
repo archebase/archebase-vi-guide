@@ -6,7 +6,7 @@ Load only the references needed for the current route.
 
 | Reference | When to load |
 |---|---|
-| `guide-page-evidence.md` | Any task needing VI Guide page interpretation |
+| `guide-page-evidence.md` | Any task needing VI Guide page interpretation; pair with `assets/guide-evidence.json` for verified numeric/color/font evidence |
 | `logo-asset-resolver.md` | Any task placing or reviewing Logo/assets |
 | `visual-grammar.md` | Any visual design or review |
 | `release-gates.md` | Any deliverable approaching review/release |
@@ -39,17 +39,20 @@ Load only the references needed for the current route.
 | `templates/decision-record.md` | Choices, rationale, source page, approver |
 | `templates/release-report.md` | The four release gates and the verdict |
 | `checklists/*.md` | Route-specific execution gates |
-| `tokens/archebase.tokens.json` | Semantic color and type tokens |
+| `tokens/archebase.tokens.json` | Semantic colors, Guide ratio/neutral evidence and type tokens |
 | `assets/logo-manifest.json` | Logo inventory, naming rules, verification and known gaps |
 | `assets/logo-checksums.json` | SHA-256 pins making the brand assets immutable |
-| `assets/guide-page-index.json` | Guide page-group map |
+| `assets/guide-page-index.json` | Guide page-group map and source hash |
+| `assets/guide-evidence.json` | Verified page-level numeric and visual evidence register |
 | `scripts/validate_logo_bundle.py` | SVG/PNG pair and bundle integrity |
 | `scripts/validate_asset_integrity.py` | Pinned-asset check: fails if any brand asset changed |
+| `scripts/validate_guide_evidence.py` | Evidence register and optional official PDF hash/page-count check |
 | `scripts/validate_tokens.py` | Token file against the approved Guide color set |
 | `scripts/validate_asset_reference.py` | Manifest vs bundle, dangling and legacy references |
 | `scripts/check_release_report.py` | Release report completeness |
 | `scripts/check_doc_links.py` | Markdown and reference-index link integrity |
 | `scripts/render_logo.sh` | Render an SVG and verify it against the bundled PNG |
+| `evals/evals.json` | Representative prompts for skill regression evaluation |
 
 ## Version status
 

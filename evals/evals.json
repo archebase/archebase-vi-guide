@@ -1,0 +1,41 @@
+{
+  "skill_name": "archebase-vi-guide",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a 16:9 ArcheBase investor slide with one evidence-led judgment, using the official VI Guide color system. Explain which color ratio and typography evidence you used, which logo asset you selected, and what remains unresolved before release.",
+      "expected_output": "The agent loads the deck and PDF evidence references, uses the explicit 50/25/10/5 color mapping without inventing component-level semantics, uses the official V2 logo, cites Guide pages, and reports unresolved approvals plus a release verdict.",
+      "files": [],
+      "expectations": [
+        "The response cites p.28 for the explicit 50/25/10/5 color ratio and maps the four colors correctly.",
+        "The response cites p.26 for the displayed Chinese/Latin type specimens and does not invent exact font licensing or CSS weights.",
+        "The response selects an asset from the bundled V2 logo set and does not redraw or edit the mark.",
+        "The response includes unresolved approvals, QA gates and a release verdict."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Review a proposed ArcheBase web dashboard screen: it uses #0032FF, #7172FA, #619AFD and #46CFFF, a dark #1E2124 background, a white gradient logo, and a small caption. Tell me what is compliant, what needs correction, and what must be confirmed from the VI Guide.",
+      "expected_output": "The review distinguishes explicit PDF evidence from implementation decisions, checks the logo against V2 assets, checks neutral/text levels, and blocks unresolved claims instead of guessing.",
+      "files": [],
+      "expectations": [
+        "The response recognizes the four colors and the p.28 ratio as explicit evidence but does not assume the ratio is a per-component requirement.",
+        "The response recognizes p.30–32 neutral levels and distinguishes confirmed percentages from unconfirmed compositing/context.",
+        "The response checks the logo variant through the resolver and enforces asset immutability.",
+        "The response returns concrete findings with source pages, owners/impact for unresolved items, and a verdict."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "We need a social graphic using a generated robot image, the phrase 'WISDOM BUILDS INTELLIGENCE', a customer metric, and the ArcheBase logo. Give the production checklist and identify any blockers.",
+      "expected_output": "The agent loads the social and image-generation playbooks, uses p.27 phrase evidence, checks rights/provenance/claims, forbids generated logos/text, and blocks publication until unresolved approvals are assigned.",
+      "files": [],
+      "expectations": [
+        "The response cites p.27 for the phrase and does not generate the logo or on-image text.",
+        "The response requires provenance, image/customer/third-party rights and a source for the metric.",
+        "The response checks crops, first-frame legibility, official logo selection and asset immutability.",
+        "The response names blockers and gives a release verdict rather than treating the graphic as automatically publishable."
+      ]
+    }
+  ]
+}

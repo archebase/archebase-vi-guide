@@ -1,0 +1,92 @@
+{
+  "source": {
+    "title": "智域基石vi基础.pdf",
+    "pages": 46,
+    "source_url": "https://archebase.feishu.cn/file/ZYgJbw4Wxo4DA0xvgqEcOGs0npf",
+    "local_verified_path": null,
+    "verification_note": "A local audit copy was used during verification; its filesystem path is intentionally not part of the portable skill.",
+    "sha256": "80680405ee05512878f5ecadc50cf32975d5a5d18c81b1ea17bcc8ad681493cb",
+    "nominal_page_size_points": [1608, 905],
+    "verified_at": "2026-09-25",
+    "embedded": false,
+    "not_embedded_reason": "The official PDF is about 60.6 MiB and is kept at the official source location rather than inside the skill bundle. This compact register preserves the verified claims and source hash."
+  },
+  "evidence": [
+    {
+      "id": "logo.forms",
+      "pages": [1, 2, 3, 4, 5],
+      "status": "explicit_text_and_visual",
+      "claim": "The Guide presents five graphic forms: gradient blue, gradient white, solid blue, solid black and solid white.",
+      "forms": ["gradient_blue", "gradient_white", "solid_blue", "solid_black", "solid_white"],
+      "do_not_infer": ["These pages do not define channel-specific placement, clear-space values or minimum-size values."]
+    },
+    {
+      "id": "typography.specimens",
+      "pages": [6, 10, 14, 26],
+      "status": "explicit_text_and_embedded_font_evidence",
+      "chinese_family": "思源黑体",
+      "chinese_displayed_specimens": ["思源粗黑", "思源黑", "思源细黑"],
+      "latin_family": "Poppins",
+      "latin_displayed_specimens": ["ExtraBold", "SemiBold", "Regular"],
+      "do_not_infer": ["Do not infer exact local font filenames, webfont licensing, CSS weight numbers or fallback stacks from the specimen pages alone."]
+    },
+    {
+      "id": "color.ratio",
+      "pages": [28],
+      "status": "explicit_visual_geometry",
+      "claim": "The Guide shows four color blocks labelled 50%, 25%, 10% and 5%.",
+      "labeled_percent_total": 90,
+      "unmapped_percent": 10,
+      "unmapped_role": "not stated in the Guide; do not assign it to a color or component", 
+      "mapping": [
+        {"token": "AB_BLUE_1", "hex": "#0032FF", "percent": 50, "visual_position": "largest left block"},
+        {"token": "AB_BLUE_2", "hex": "#7172FA", "percent": 25, "visual_position": "upper-right block"},
+        {"token": "AB_BLUE_3", "hex": "#619AFD", "percent": 10, "visual_position": "lower-right block"},
+        {"token": "AB_BLUE_4", "hex": "#46CFFF", "percent": 5, "visual_position": "smallest lower-right block"}
+      ],
+      "geometry_method": "PyMuPDF page 28 drawing geometry and fill colors were inspected on 2026-09-25.",
+      "do_not_infer": ["The PDF does not name semantic UI roles for the four bands.", "The ratio is not automatically a per-component requirement.", "Do not derive opacity, accessibility contrast or print conversion rules from the ratio alone."]
+    },
+    {
+      "id": "neutral.background",
+      "pages": [30, 31],
+      "status": "explicit_text_and_visual_example",
+      "base_hex": "#1E2124",
+      "background_levels_percent": [100, 5],
+      "contexts": ["dark neutral background example", "light neutral background example"],
+      "do_not_infer": ["The exact compositing formula, CSS implementation and component-role mapping are not specified."]
+    },
+    {
+      "id": "neutral.text",
+      "pages": [32],
+      "status": "explicit_text_and_visual_example",
+      "base_hex": "#1E2124",
+      "text_levels_percent": [100, 70, 50],
+      "do_not_infer": ["Do not assume these levels apply unchanged to every channel, export format or image background."]
+    },
+    {
+      "id": "naming.examples",
+      "pages": [33, 34, 35, 36],
+      "status": "explicit_visual_examples",
+      "examples": ["ArchBase", "ARCHBASE", "# ARCHBASE", "Explore 01"],
+      "do_not_infer": ["These are Guide examples, not an automatic approval to rename the company, product, domain or lockup. Any naming conflict remains an owner decision."]
+    },
+    {
+      "id": "application.boards",
+      "pages": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+      "status": "visual_board_only",
+      "claim": "The application boards are visual evidence for composition, image treatment, whitespace, scale and context.",
+      "requires_rendered_page_review": true,
+      "do_not_infer": ["OCR/text extraction alone cannot establish a rule from these pages."]
+    }
+  ],
+  "unconfirmed": [
+    "semantic role names for the p.28 percentage bands",
+    "exact neutral compositing and CSS alpha implementation",
+    "logo clear space and minimum size",
+    "font license, exact files and production weight mapping",
+    "ArcheBase vs ArchBase naming and lockup approval",
+    "media color conversion and print conversion",
+    "channel-specific application rules for the visual boards"
+  ]
+}

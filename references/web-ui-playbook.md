@@ -22,8 +22,8 @@ One screen has one primary audience judgment. If a screen tries to make two argu
 | 37–46 | Application boards: composition, grid, whitespace and scale. Inspect rendered pages; OCR alone is not evidence. |
 | 22–25 | Primary and auxiliary identity: clear space, minimum size, orientation and combination restrictions. |
 | 29 | Main color values (`#0032FF`, `#7172FA`, `#619AFD`, `#46CFFF`). |
-| 30–32 | `#1E2124` neutral levels and their role mapping. |
-| 28 | The `25% / 50% / 10% / 5%` ratio diagram — **role mapping is unresolved**, see §4. |
+| 30–32 | `#1E2124` neutral examples: backgrounds at 100%/5% and text at 100%/70%/50%; exact compositing and component-role mapping remain unconfirmed. |
+| 28 | Explicit labels: `AB_BLUE_1` 50%, `AB_BLUE_2` 25%, `AB_BLUE_3` 10%, `AB_BLUE_4` 5%; 90% is labelled and the remaining 10% is unassigned in the Guide. |
 
 Record one `templates/page-inspection-record.md` per page used. A visual inference may not become an official rule without approval.
 
@@ -42,7 +42,7 @@ Map every color to a semantic role from `tokens/archebase.tokens.json`. Do not i
 
 `AB_CHARCOAL` `#1E2124` is the technical dark field and neutral text color. Its exact opacity levels per role are **待确认** — do not present an invented scale as the approved one.
 
-The p.28 ratio roles are **待确认**. Until the brand owner confirms the mapping, do not claim a specific 25/50/10/5 usage split in a deliverable; record it as an open approval in the release report.
+The p.28 numeric labels are explicit: `AB_BLUE_1` 50%, `AB_BLUE_2` 25%, `AB_BLUE_3` 10%, `AB_BLUE_4` 5% (90% labelled total). The remaining 10% is not assigned in the Guide. Use the labels as overall composition evidence, but do not turn them into a per-component allocation or semantic role taxonomy without a separate decision; those implementation details remain **待确认**.
 
 Do not introduce orange as a CTA or status color. The Guide text does not confirm that system.
 
@@ -72,8 +72,8 @@ Where the Guide or an approved component library is silent on a state's visual t
 
 ## 待确认
 
-- p.28 ratio role mapping.
-- `#1E2124` neutral opacity levels per role.
+- p.28 semantic role names, per-component allocation, and the unassigned 10%.
+- Exact `#1E2124` compositing and component-role implementation.
 - Logo clear space and minimum size in pixels.
 - Font license and approved weights for web embedding.
 - `ArcheBase` / `ArchBase` / `ARCHBASE` naming in UI copy.

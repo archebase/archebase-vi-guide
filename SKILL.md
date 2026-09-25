@@ -1,6 +1,6 @@
 ---
 name: archebase-vi-guide
-version: 3.2.0
+version: 3.3.0
 description: "Use for any ArcheBase-branded design or review. This is a 3-layer VI system: SKILL.md orchestrates progressive disclosure; references contain route/page/domain rules; templates, manifests, tokens, checklists and validators make execution repeatable. Use with the shared pptx skill for PowerPoint work."
 license: Proprietary. Do not redistribute brand assets.
 ---
@@ -36,7 +36,7 @@ On conflict, stop and record the conflict. Never average conflicting brand value
 
 1. Load this file.
 2. Select route: `deck`, `web-ui`, `social`, `video-event`, `image`, or `review`.
-3. Load `references/guide-page-evidence.md` and `references/logo-asset-resolver.md` for all visual asset work.
+3. Load `references/guide-page-evidence.md` and `references/logo-asset-resolver.md` for all visual asset work. When using numeric color, neutral or typography evidence, also load `assets/guide-evidence.json` and cite its evidence id/page.
 4. Load the selected route playbook.
 5. Load the relevant template, checklist and token/manifest files.
 6. Build, render, inspect, validate and run release gates.
@@ -70,7 +70,7 @@ Every SVG has a matching same-size PNG; all pairs verified at RMSE 0. Prefer the
 Before design, fill `templates/brief.md`. Then:
 
 1. Extract the one-sentence takeaway.
-2. Identify evidence and claims; distinguish fact, inference and proposal.
+2. Identify evidence and claims; distinguish fact, inference and proposal. For explicit Guide numbers, use the evidence register rather than OCR or memory; do not turn the unassigned 10% on p.28 into a made-up role.
 3. Inspect relevant Guide pages and create page records.
 4. Resolve official assets using the resolver and record the selected file.
 5. Choose a composition recipe and semantic tokens.

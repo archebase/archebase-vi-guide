@@ -12,9 +12,10 @@ Source: official Feishu PDF `智域基石vi基础.pdf`, 46 pages. Always inspect
 | 23–25 | Auxiliary identities; inspect orientations, combinations and restrictions. |
 | 26 | Brand typography visibly shows 思源黑体 and Poppins, including ExtraBold/SemiBold/Regular specimens. Verify exact files/weights. |
 | 27 | `WISDOM BUILDS INTELLIGENCE`, `Powered by`, main palette section. |
-| 28 | Ratio diagram `25% / 50% / 10% / 5%`; role mapping is unresolved until visually/owner confirmed. |
+| 28 | Explicit visual ratio labels: `AB_BLUE_1` (`#0032FF`) = 50%, `AB_BLUE_2` (`#7172FA`) = 25%, `AB_BLUE_3` (`#619AFD`) = 10%, `AB_BLUE_4` (`#46CFFF`) = 5%; 90% is labelled and the remaining 10% is not assigned in the Guide. Mapping is recorded in `assets/guide-evidence.json`. The labels are confirmed; semantic role names and per-component allocation remain unconfirmed. |
 | 29 | Main colors: `#0032FF`, `#7172FA`, `#619AFD`, `#46CFFF`. |
-| 30–32 | `#1E2124` neutral backgrounds/text levels; inspect exact role and opacity mapping. |
+| 30–31 | `#1E2124` neutral background examples at 100% and 5%; the visual levels are explicit, while exact compositing and component-role mapping remain unconfirmed. |
+| 32 | `#1E2124` text levels at 100%, 70% and 50%; do not infer a universal CSS or export implementation. |
 | 33–36 | `ArchBase`, `ARCHBASE`, `Explore 01` examples; naming/lockup relationships remain approval items. |
 | 37–46 | Visual application boards; inspect each rendered page for composition, image treatment, grid, whitespace and scale. No OCR-only inference. |
 

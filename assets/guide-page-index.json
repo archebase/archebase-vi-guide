@@ -1,1 +1,18 @@
-{"source":"智域基石vi基础.pdf","pages":46,"page_groups":{"logo":[1,2,3,4,5],"english_type":[6,7,8,9],"chinese_type":[10,11,12,13],"bilingual_type":[14,15,16,17,18,19,20,21],"core_identity":[22],"auxiliary_identity":[23,24,25],"brand_type_palette":[26,27,28,29,30,31,32],"applications":[33,34,35,36],"visual_boards":[37,38,39,40,41,42,43,44,45,46]},"review_status":"page map complete; visual-only rules require human reviewer record"}
+{
+  "source": "智域基石vi基础.pdf",
+  "pages": 46,
+  "page_groups": {
+    "logo": [1, 2, 3, 4, 5],
+    "english_type": [6, 7, 8, 9],
+    "chinese_type": [10, 11, 12, 13],
+    "bilingual_type": [14, 15, 16, 17, 18, 19, 20, 21],
+    "core_identity": [22],
+    "auxiliary_identity": [23, 24, 25],
+    "brand_type_palette": [26, 27, 28, 29, 30, 31, 32],
+    "applications": [33, 34, 35, 36],
+    "visual_boards": [37, 38, 39, 40, 41, 42, 43, 44, 45, 46]
+  },
+  "evidence_register": "assets/guide-evidence.json",
+  "source_sha256": "80680405ee05512878f5ecadc50cf32975d5a5d18c81b1ea17bcc8ad681493cb",
+  "review_status": "page map and numeric evidence register verified; visual-only application rules still require rendered-page human review"
+}
