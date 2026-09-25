@@ -3,7 +3,7 @@ name: archebase-vi-guide
 description: "Use whenever a request involves ArcheBase / 智域基石 brand work: VI review, logo selection, brand colors or typography, PPTX/decks/BPs, web/product UI, social or press graphics, video/event screens, image sourcing or generation, or brand templates. Routes the work through the official VI Guide evidence, approved V2 assets, channel playbooks, deterministic validators and human release gates. For PPTX/POTX, use together with the shared pptx skill."
 license: Proprietary. Do not redistribute brand assets.
 metadata:
-  version: "3.5.3"
+  version: "3.5.4"
   source: "ArcheBase VI Guide System"
 compatibility: "Requires a filesystem-capable skill loader. Python 3 runs validators; librsvg and ImageMagick are optional for logo render verification; PyMuPDF is optional for --pdf evidence verification."
 ---

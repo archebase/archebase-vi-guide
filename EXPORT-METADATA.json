@@ -1,9 +1,10 @@
 {
   "id": "dc47982c-6a2b-4ed1-980b-679e91647ac2",
   "name": "archebase-vi-guide",
+  "version": "3.5.4",
   "description": "Use whenever a request involves ArcheBase / 智域基石 brand work: VI review, logo selection, brand colors or typography, PPTX/decks/BPs, web/product UI, social or press graphics, video/event screens, image sourcing or generation, or brand templates. Routes the work through the official VI Guide evidence, approved V2 assets, channel playbooks, deterministic validators and human release gates. For PPTX/POTX, use together with the shared pptx skill.",
   "created_at": "2026-09-05T16:59:35Z",
-  "updated_at": "2026-09-25T12:30:00Z",
+  "updated_at": "2026-09-26T00:00:00Z",
   "file_count": 156,
   "changelog": [
     "2026-09-25m: v3.5.4. Clarified circular display handling: use the supplied 方圆通用 asset, not the ordinary 方形 asset, whenever a surface is circular or may be circularly cropped; documented the circular safe area and current bundled asset in the resolver, manifest and web UI playbook.",
